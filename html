@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>/htop Output</title>
+</head>
+<body>
+    <h1>/htop Information</h1>
+    <p><strong>Name:</strong> {{ name }}</p>
+    <p><strong>Username:</strong> {{ username }}</p>
+    <p><strong>Server Time (IST):</strong> {{ server_time }}</p>
+    <h2>htop Output:</h2>
+    <pre>
+        {% for line in htop_output %}
+            {{ line }}<br>
+        {% endfor %}
+    </pre>
+</body>
+</html>
